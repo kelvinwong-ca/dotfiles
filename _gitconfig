@@ -1,6 +1,6 @@
 [user]
-    name = John Anderson
-    email = sontek@gmail.com
+    name = Kelvin Wong
+    email = code@kelvinwong.ca
 
 [color]
     diff = auto
@@ -28,3 +28,9 @@
     lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
     ls = ls-files
 
+[merge]
+    tool = vimdiff
+[mergetool "vimdiff"]
+    path = /usr/local/bin/vimdiff
+[branch]
+    autosetupmerge = true
