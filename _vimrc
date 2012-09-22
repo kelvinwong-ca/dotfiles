@@ -4,7 +4,7 @@
 " ==========================================================
 " Pep8 - http://pypi.python.org/pypi/pep8
 " Pyflakes
-" Ack
+" Ack-grep
 " Rake & Ruby for command-t
 " nose, django-nose
 
@@ -142,7 +142,7 @@ filetype on                   " try to detect filetypes
 filetype plugin indent on     " enable loading indent file for filetype
 set number                    " Display line numbers
 set numberwidth=1             " using only 1 column (and 1 space) while possible
-set background=dark           " We are using dark background in vim
+"set background=dark           " We are using dark background in vim
 set title                     " show title in console title bar
 set wildmenu                  " Menu completion in command mode on <Tab>
 set wildmode=full             " <Tab> cycles between all matching choices.
@@ -174,7 +174,7 @@ set pumheight=6             " Keep a small completion window
 
 """ Moving Around/Editing
 set cursorline              " have a line indicate the cursor location
-set ruler                   " show the cursor position all the time
+set ruler                   " show the cursor line position all the time
 set nostartofline           " Avoid moving cursor to BOL when jumping around
 set virtualedit=block       " Let cursor move past the last char in <C-v> mode
 set scrolloff=3             " Keep 3 context lines above and below the cursor
@@ -220,7 +220,8 @@ set laststatus=2            " Always show statusline, even if only 1 window.
 set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
 
 " displays tabs with :set list & displays when a line runs off-screen
-set listchars=tab:>-,eol:$,trail:-,precedes:<,extends:>
+"set listchars=tab:>-,eol:$,trail:-,precedes:<,extends:>
+set listchars=tab:»‥,eol:¶,trail:‥,precedes:<,extends:>
 set list
 
 """ Searching and Patterns
